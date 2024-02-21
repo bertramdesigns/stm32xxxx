@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ms-vscode-remote.vscode-remote-extensionpack",
+        "ms-vscode.vscode-embedded-tools",
+        "marus25.cortex-debug"
+    ]
+}
