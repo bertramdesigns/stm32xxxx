@@ -16,7 +16,7 @@ A bare metal C project template and development environment for STM32 microcontr
 
 ### Installation
 TODO: UPDATE TO bertramdesigns GIT
-To install run `git clone https://github.com/lukezsmith/stm32-dev` to clone the repository.
+To install run `git clone https://github.com/bertramdesigns/stm32xxxx` to clone the repository.
 
 #### STM32CubeProgrammer
 
