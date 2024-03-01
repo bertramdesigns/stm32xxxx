@@ -1,3 +1,6 @@
 [submodule "thirdparty/build-tool"]
 	path = thirdparty/build-tool
 	url = https://github.com/ObKo/stm32-cmake.git
+[submodule "thirdparty/stm32-cmake"]
+	path = thirdparty/stm32-cmake
+	url = https://github.com/ObKo/stm32-cmake.git
