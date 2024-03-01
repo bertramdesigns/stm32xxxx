@@ -91,6 +91,9 @@ fi
 rename_to_bsp_main_h
 rename_to_bsp_main_c
 
+# *_hal_msp.c  & *_it.c now need to include bsp_main.h
+migrate_hal_includes
+
 # debug error handler moved to project directory. Update includes
 delete_bsp_main_error_handler
 migrate_bsp_main_to_proj_error_handler
@@ -100,9 +103,8 @@ export_all_bsp_main_functions
 
 ### Move main() entry to project main --------------- ###
 
-if [ $MAIN_C_CREATED = true ]; then
-    delete_bsp_main_c_entry
-fi
+delete_bsp_main_c_entry
+
 
 if [ $MAIN_C_CREATED = false ]; then
     # auto check all the functions from generated init match the main loop init

@@ -14,3 +14,12 @@ Release/
 RemoteSystemsTempFiles/
 build
 .DS_Store
+
+# Ignore script test and backup files
+test.sh
+.bak
+
+# Ignore the generated files, except .ioc files
+build/
+board-support/
+!*.ioc

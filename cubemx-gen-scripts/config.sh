@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # absolute directory path to the project root
-export PROJECT_ROOT_DIR="/Users/dylanbertram/Dev/projects_embedded/_hmi_test_rig/code_stm32u5a5/_STM32u5-local-template"
+export PROJECT_ROOT_DIR="/Users/dylanbertram/Dev/projects_embedded/_hmi_test_rig/_template_stm32_macos/code/stm32u5a5"
 
 ############################################################################################################
 # OPTIONS

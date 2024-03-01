@@ -78,3 +78,12 @@ export_all_bsp_main_functions() {
         echo "$find_functions" | awk -F'@' '{for(i=1; i<=NF; i++) print $i}' >>$LOG_PATH/$LOG_FILE_NAME
     fi
 }
+
+migrate_hal_includes(){
+    # replace 'main.h' with 'bsp_main.h' in the files ending with '_hal_msp.c' and '_it.c'
+    for file in $(find $CUBEMX_CORE_DIR/Src -name "*_hal_msp.c" -o -name "*_it.c"); do
+        if exe_and_handle_error sed -i '' 's/main.h/bsp_main.h/' $file; then
+            echo "Replaced 'main.h' with 'bsp_main.h' in $file" >>$LOG_PATH/$LOG_FILE_NAME
+        fi
+    done
+}

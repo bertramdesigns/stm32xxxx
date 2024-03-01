@@ -5,7 +5,7 @@ check_main_c_entry() {
     echo "beginning check_main_c_entry"
 
     # Extract function calls from main_loop.bak
-    function_calls=$(grep -oP '[A-Z][a-zA-Z0-9_]*\([a-zA-Z0-9_, ]*\);' $PROJECT_SRC_DIR/main_loop.bak)
+    function_calls=$(grep -o '[A-Z][a-zA-Z0-9_]*\([a-zA-Z0-9_, ]*\);' $PROJECT_SRC_DIR/main_loop.bak)
 
     # Check each function call in main.c
     for function_call in $function_calls; do
