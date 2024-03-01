@@ -88,6 +88,8 @@ After you generate code, you will have `cubemx-scripts.log`in your root director
 First thing you should do is run `make build`. If all goes well, everything ejected properly. If not, report the error and check the log file.
 
 Your file structure should look as follows:
+
+```
 .
 | .vscode
 | board-support
@@ -125,6 +127,7 @@ Your file structure should look as follows:
 | CMakeLists.txt
 | gcc-arm-none-eabi.cmake
 | README.md
+````
 
 ### Configuration
 There are a number of configurable properties within the template.
