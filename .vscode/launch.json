@@ -2,49 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "OpenOCD Debug",
+            "name": "Cortex ST-Link",
             "cwd": "${workspaceRoot}",
-            "executable": "./build/release/main.elf",
-            "request": "launch",
-            "type": "cortex-debug",
-            "servertype": "openocd",
-            "device": "STM32U5A5ZJ",
-            // "interface": "swd",
-            "runToEntryPoint": "main",
-            "configFiles": [
-                "interface/stlink.cfg",
-                "target/stm32u5x.cfg"
-            ],
-        },
-        {
-            "name": "ST-Link Restart Debug",
-            "cwd": "${workspaceFolder}",
-            "executable": "${command:cmake.launchTargetPath}",
+            "executable": "./build/firmware.elf",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "stlink",
-            "interface": "swd",
-            "showDevDebugOutput": "both",
-            "v1": false, // ST-Link version
-            "device": "STM32L432KC", // MCU used [optional]
-            "serialNumber": "", // Set ST-Link ID if you use multiple at the same time [optional]
-            "runToEntryPoint": "main", // Run to main and stop there [optional]
-            "svdFile": "STM32_svd/STM32U5A5.svd" // SVD file to see registers [optional]
-        },
-        {
-            "name": "ST-Link Attach Debug",
-            "cwd": "${workspaceFolder}",
-            "executable": "${command:cmake.launchTargetPath}",
-            "request": "attach",
-            "type": "cortex-debug",
-            "servertype": "stlink",
-            "interface": "swd",
-            "showDevDebugOutput": "both",
-            "v1": false, // ST-Link version
-            "device": "STM32L432KC", // MCU used [optional]
-            "serialNumber": "", // Set ST-Link ID if you use multiple at the same time [optional]
-            "runToEntryPoint": "main", // Run to main and stop there [optional]
-            "svdFile": "STM32_svd/STM32U5A5.svd" // SVD file to see registers [optional]
+            // "device": "STM32U5A5ZJ",
+            "svdFile": "./debug-files/STM32U5A5.svd"
         }
     ]
 }

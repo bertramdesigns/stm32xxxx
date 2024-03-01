@@ -1,19 +1,14 @@
 {
+    "cmake.configureOnOpen": false,
+    "cmake.configureEnvironment": {
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "on"
+    },
+    "C_Cpp.default.intelliSenseMode": "gcc-arm",
     "files.associations": {
         "*.svg": "html",
-        "simple_module.h": "c",
-        "atomic": "c",
-        "*.tcc": "c",
-        "compare": "c",
-        "optional": "c",
-        "numeric": "c",
-        "sstream": "c",
-        "cmath": "c",
         "stm32u5xx_hal.h": "c",
         "stm32u5xx.h": "c",
-        "stm32u5xx_hal_gpio.h": "c",
-        "gpio.h": "c",
-        "main.h": "c"
+        "bsp_main.h": "c"
     },
-    "cmake.configureOnOpen": false
+    "cortex-debug.gdbPath": "arm-none-eabi-gdb"
 }

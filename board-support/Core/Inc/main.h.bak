@@ -51,18 +51,16 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
+void MX_GPIO_Init(void);
+void MX_ICACHE_Init(void);
 
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define VBUS_SENSE_Pin GPIO_PIN_2
-#define VBUS_SENSE_GPIO_Port GPIOC
-#define UCPD_FLT_Pin GPIO_PIN_14
-#define UCPD_FLT_GPIO_Port GPIOB
-#define UCPD_DBn_Pin GPIO_PIN_5
-#define UCPD_DBn_GPIO_Port GPIOB
+#define USER_BTN_Pin GPIO_PIN_13
+#define USER_BTN_GPIO_Port GPIOC
 
 /* USER CODE BEGIN Private defines */
 

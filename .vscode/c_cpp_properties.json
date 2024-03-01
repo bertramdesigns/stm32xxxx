@@ -1,19 +1,19 @@
 {
     "configurations": [
         {
-            "name": "STM32U5A5",
+            "name": "STM32xxxx",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
             "defines": [
-                "USE_HAL_DRIVER",
-                "STM32U5A5xx"
+                "USE_HAL_DRIVER"
             ],
             "cStandard": "c11",
-            "cppStandard": "c++20",
+            "cppStandard": "gnu++14",
             "intelliSenseMode": "gcc-arm",
             "compileCommands": "${workspaceFolder}/build/compile_commands.json",
-            "compilerPath": "/usr/local/bin/arm-none-eabi-gcc"
+            "compilerPath": "/usr/local/bin/arm-none-eabi-gcc",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4
